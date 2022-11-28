@@ -1,8 +1,10 @@
 # Contabo-install-GUI
 
-adduser xrdpuser   (password : e.g paste  se7ye8pc5hs0  )
+https://www.youtube.com/watch?v=_NnxgAQsJkE&t=855s
 
-usermod -aG sudo,adm xrdpuser && su xrdpuser
+adduser NEWUSER   (password : e.g paste  se7ye8pc5hs0  )
+
+usermod -aG sudo,adm NEWUSER && su NEWUSER
 
 sudo apt-get update && sudo apt-get upgrade -y
 
@@ -16,4 +18,14 @@ sudo sed -i 's/#Port 22/Port 53572/g' /etc/ssh/sshd_config
 
 sudo ufw allow 53572 && sudo ufw allow 53579 && sudo ufw enable && sudo ufw status numbered
 
-sudo reboot    
+
+sudo reboot   
+
+
+#Firewall Settings
+https://ubuntu.com/server/docs/security-firewall
+
+sudo ufw enable
+
+sudo ufw allow 22
+
