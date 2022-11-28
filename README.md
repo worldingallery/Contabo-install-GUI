@@ -20,7 +20,11 @@ sudo ufw allow 53572 && sudo ufw allow 53579 && sudo ufw enable && sudo ufw stat
 
 
 sudo reboot   
+---------------------------------------------------------
+#reconnect via SSH port 53572  using NEWUSER
+sudo passwd --delete --lock root
 
+----------------------------------------------------------
 
 #Firewall Settings
 https://ubuntu.com/server/docs/security-firewall
